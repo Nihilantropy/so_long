@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 16:04:59 by crea              #+#    #+#             */
-/*   Updated: 2024/03/30 16:51:24 by crea             ###   ########.fr       */
+/*   Updated: 2024/03/30 23:23:49 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,9 @@
 /* images upload */
 # define ERROR_WALL_IMG_UPLOAD "Error\nCan't upload wall images.\n"
 # define ERROR_PLAYER_IMG_UPLOAD "Error\nCan't upload player images.\n"
+# define ERROR_PLAYER_D_IMG_UPLOAD "Error\nCan't upload player d images.\n"
 # define ERROR_PLAYER_INV_IMG_UPLOAD "Error\nCan't upload player inverted images.\n"
+# define ERROR_PLAYER_D_INV_IMG_UPLOAD "Error\nCan't upload player d inverted images.\n"
 # define ERROR_COLLECT_IMG_UPLOAD "Error\nCan't upload collectable images.\n"
 # define ERROR_EXIT_IMG_UPLOAD "Error\nCan't upload exit images.\n"
 # define ERROR_ENEMY_IMG_UPLOAD "Error\nCan't upload enemy images.\n"
@@ -91,9 +93,18 @@
 # define WIN_MSG_JOKE "\n##################################\n#                                #\n# A PERFECTLY RESPECTABLE BONER! #\n#                                #\n#        CONGRATS TURTLE!        #\n#                                #\n##################################\n"
 
 /* losing msg */
-# define PLAYER_GOT_CAUGHT "\n\nYOU DIED\n\n"
+# define PLAYER_GOT_CAUGHT "\nYOU DIED\n\n"
 # define ENEMY_GOT_PLAYER "\n\nHELL GOT YOU\n\n"
 # define GAME_LOST "Game lost.\nMaybe you can try minecraft...\n\n"
+
+/* enemy mechanics */
+# define ENEMY_BUMP_PLAYER "They really want to die... what a bunch of idiots!\n"
+
+/* player mechanics */
+# define ON_FIRE "Your pipi is on fire!!! It's time to give some punta\n"
+# define RUN_OUT "Chill now. You're gonna die for dehydration...\n"
+# define PLAYER_DESTROY_ENEMY "Ulala! That's some hard smashing D! Right between the eyes!\n"
+# define LAST_ENEMY "All enemies are gone!\nYou could break a wall with that you know? That's some nasty shi...\n"
 
 /* enemy mechanics utils */
 # define ERROR_ENEMY_ALLOC "Error\nCan't allocate memory for enemy array.\n"

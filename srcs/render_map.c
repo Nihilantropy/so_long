@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 12:56:30 by crea              #+#    #+#             */
-/*   Updated: 2024/03/30 20:10:11 by crea             ###   ########.fr       */
+/*   Updated: 2024/03/30 22:30:22 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,9 @@ void    init_sprites(t_game *game)
     game->tiles.floor = mlx_xpm_file_to_image(mlx_ptr, FLOOR_SPRITE, &width, &height);
     load_wall_images(game);
     load_player_images(game);
+	load_player_d_images(game);
     load_player_inv_images(game);
+	load_player_d_inv_images(game);
     load_collect_images(game);
     load_exit_images(game);
 	load_enemy_images(game);
@@ -36,15 +38,11 @@ void    render_tiles(t_game *game, char tile)
 {
     void *image;
 
-    image = NULL;
+    image = handle_diff_player_anim(game, tile);
     if (tile == FLOOR)
         image = game->tiles.floor;
     else if (tile == WALL)
         image = game->tiles.wall.frames[game->tiles.wall.current_frame];
-    else if (tile == PLAYER && game->map.player_pos.facing_left)
-        image = game->tiles.player_inv.frames[game->tiles.player.current_frame];
-    else if (tile == PLAYER)
-        image = game->tiles.player.frames[game->tiles.player.current_frame];
     else if (tile == COLLECT)
         image = game->tiles.collect.frames[game->tiles.collect.current_frame];
     else if (tile == EXIT)
@@ -88,7 +86,9 @@ void free_images(t_game *game)
     mlx_destroy_image(game->mlx_ptr, game->tiles.floor);
     free_wall_images(game);
     free_player_images(game);
+	free_player_d_images(game);
     free_player_inv_images(game);
+    free_player_d_inv_images(game);
     free_collect_images(game);
     free_exit_images(game);
 	free_enemy_images(game);

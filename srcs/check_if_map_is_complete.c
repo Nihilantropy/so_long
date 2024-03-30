@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 16:08:32 by crea              #+#    #+#             */
-/*   Updated: 2024/03/30 14:13:51 by crea             ###   ########.fr       */
+/*   Updated: 2024/03/30 23:20:08 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ int	is_map_complete(t_game *game)
 	visited = NULL;
 	build_bool_matrix(game, &visited);
 	flood_fill(game, game->map.player_pos.x, game->map.player_pos.y, visited);
-	printf_flood_matrix(game, visited);
+	//printf_flood_matrix(game, visited);
 	if (verify_collectibles_and_exit(game, visited))
 	{
 		free_bool_matrix(game, visited);

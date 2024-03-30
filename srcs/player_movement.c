@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 16:09:06 by crea              #+#    #+#             */
-/*   Updated: 2024/03/30 15:50:42 by crea             ###   ########.fr       */
+/*   Updated: 2024/03/30 23:20:43 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,5 +75,5 @@ void	handle_movement_changes(t_game *game, int new_x, int new_y)
 		}
 		close_game(game);
 	}
-	print_matrix(game);
+	//print_matrix(game);
 }

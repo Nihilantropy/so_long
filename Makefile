@@ -7,7 +7,7 @@ SRCS		= main.c check_map_extention.c get_map.c get_map_utils.c check_map_edges.c
 				check_if_map_is_complete.c check_if_map_is_complete_utils.c manage_display.c render_map.c player_movement.c \
 				player_movement_utils.c handle_closure.c handle_animations.c wall_animation.c player_animation.c player_inv_animation.c \
 				collect_animation.c exit_animation.c enemy_animation.c game_mechanics.c game_mechanics_utils.c enemy_mechanics.c enemy_mechanics_utils.c \
-				update.c player_mechanics.c player_mechanics_utils.c
+				update.c player_mechanics.c player_mechanics_utils.c player_d_animation.c player_d_inv_animation.c
 						
 
 OBJS		= $(patsubst %.c, $(SOLONG_DIR)/%.o, $(SRCS))

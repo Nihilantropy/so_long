@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 16:09:01 by crea              #+#    #+#             */
-/*   Updated: 2024/03/30 19:31:58 by crea             ###   ########.fr       */
+/*   Updated: 2024/03/30 23:22:35 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	update_player_pos(t_game *game, int new_x, int new_y)
 	}
 	else
 	{
-		ft_printf(NEW_PLAYER_POS);
+		//ft_printf(NEW_PLAYER_POS);
 		ft_printf(MOVES_NBR);
 		return ;
 	}

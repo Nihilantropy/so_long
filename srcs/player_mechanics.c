@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 12:46:01 by crea              #+#    #+#             */
-/*   Updated: 2024/03/30 20:47:24 by crea             ###   ########.fr       */
+/*   Updated: 2024/03/30 23:14:01 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,27 @@ int	player_bump_enemy(t_game *game, int new_x, int new_y)
 void	power_of_the_d(t_game *game)
 {
 	game->powerup.the_d = true;
+	game->powerup.time = current_timestamp();
+	ft_printf(ON_FIRE);
 }
 
 void	destroy_enemy(t_game *game)
 {
+	int	enemy_index;
+	int	count;
+
+	enemy_index = 0;
+	count = 0;
 	game->map.enemy[game->map.enemy_target].alive = false;
+	while (enemy_index < game->map.enemies)
+	{
+		if (!game->map.enemy[enemy_index].alive)
+			count++;
+		else
+			ft_printf(PLAYER_DESTROY_ENEMY);
+		if (count == game->map.enemies - 1)
+			ft_printf(LAST_ENEMY);
+		enemy_index++;
+	}
 	remove_enemy_from_matrix(game);
-	//game->powerup.the_d = false;
 }

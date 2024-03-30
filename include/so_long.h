@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 17:46:20 by crea              #+#    #+#             */
-/*   Updated: 2024/03/30 20:54:38 by crea             ###   ########.fr       */
+/*   Updated: 2024/03/30 22:50:14 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,8 @@ typedef struct	s_enemy
 /* struct for player power ups */
 typedef struct s_powerup
 {
-	t_bool	the_d;
+	t_bool		the_d;
+	long long	time;
 }			t_powerup;
 
 /* struct for wall animated tiles */
@@ -110,6 +111,14 @@ typedef struct s_player_anim_sprite
 	int		anim_counter;
 }			t_player_anim_sprite;
 
+/* struct for player d animated tiles */
+typedef struct s_player_d_anim_sprite
+{
+	void	*frames[PLAYER_ANIM_FRAMES];
+	int		current_frame;
+	int		anim_counter;
+}			t_player_d_anim_sprite;
+
 /* struct for inverted player animated tiles */
 typedef struct s_player_inv_anim_sprite
 {
@@ -117,6 +126,14 @@ typedef struct s_player_inv_anim_sprite
 	int		current_frame;
 	int		anim_counter;
 }			t_player_inv_anim_sprite;
+
+/* struct for inverted player animated tiles */
+typedef struct s_player_d_inv_anim_sprite
+{
+	void	*frames[PLAYER_ANIM_FRAMES];
+	int		current_frame;
+	int		anim_counter;
+}			t_player_d_inv_anim_sprite;
 
 /* struct for exit animated tiles */
 typedef struct s_exit_anim_sprite
@@ -148,7 +165,9 @@ typedef struct s_tiles
 	void						*floor;
 	t_wall_anim_sprite			wall;
 	t_player_anim_sprite		player;
+	t_player_d_anim_sprite		player_d;
 	t_player_inv_anim_sprite	player_inv;
+	t_player_d_inv_anim_sprite	player_d_inv;
 	t_collect_anim_sprite		collect;
 	t_exit_anim_sprite			exit;
 	t_enemy_anim_sprite			enemy;
@@ -211,8 +230,12 @@ static inline t_game    init_game(void)
 		.tiles.wall.anim_counter = 0,
 		.tiles.player.current_frame = 0,
 		.tiles.player.anim_counter = 0,
+		.tiles.player_d.current_frame = 0,
+		.tiles.player_d.anim_counter = 0,
 		.tiles.player_inv.current_frame = 0,
 		.tiles.player_inv.anim_counter = 0,
+		.tiles.player_d_inv.current_frame = 0,
+		.tiles.player_d_inv.anim_counter = 0,
 		.tiles.collect.current_frame = 0,
 		.tiles.collect.anim_counter = 0,
 		.tiles.exit.current_frame = 0,
@@ -227,6 +250,7 @@ static inline t_game    init_game(void)
 		.lose = false,
 		.victory = false,
 		.powerup.the_d = false,
+		.powerup.time = 0,
 	});
 }
 
@@ -262,6 +286,7 @@ int		is_map_complete(t_game *game);
 /* animation handler */
 void	update_animations(t_game *game);
 void	handle_animations(t_game *game);
+void	*handle_diff_player_anim(t_game *game, char tile);
 
 /* walls sprites animation */
 void	load_wall_images(t_game *game);
@@ -272,9 +297,21 @@ void	free_wall_images(t_game *game);
 void	load_player_images(t_game *game);
 void	handle_player_anim(t_game *game);
 void	free_player_images(t_game *game);
+
+/* player sprites animation */
+void	load_player_d_images(t_game *game);
+void	handle_player_d_anim(t_game *game);
+void	free_player_d_images(t_game *game);
+
+/* player inv sprites animation */
 void	load_player_inv_images(t_game *game);
 void	handle_player_inv_anim(t_game *game);
 void	free_player_inv_images(t_game *game);
+
+/* player inv sprites animation */
+void	load_player_d_inv_images(t_game *game);
+void	handle_player_d_inv_anim(t_game *game);
+void	free_player_d_inv_images(t_game *game);
 
 /* collectable sprites animation */
 void	load_collect_images(t_game *game);
@@ -328,6 +365,7 @@ void	exit_lose(t_game *game);
 
 /* game mechanics utils */
 int 	random_range(unsigned int min, unsigned int max);
+long long	current_timestamp(void);
 
 /* enemy mechanics */
 int		enemy_got_player(t_game *game, int new_x, int new_y);

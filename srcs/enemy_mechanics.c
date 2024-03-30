@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 15:47:51 by crea              #+#    #+#             */
-/*   Updated: 2024/03/30 20:57:25 by crea             ###   ########.fr       */
+/*   Updated: 2024/03/30 23:05:06 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int	enemy_bump_player(t_game *game, int new_x, int new_y)
 	else if (game->map.matrix[new_y][new_x] == PLAYER && game->powerup.the_d)
 	{
 		self_destroy(game);
+		ft_printf(ENEMY_BUMP_PLAYER);
 		return (1);
 	}
 	return (0);

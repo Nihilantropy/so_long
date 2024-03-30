@@ -23,6 +23,16 @@
 # define PLAYER_SPRITE_FRAME_7 "Tiles/player/player(frame7).xpm"
 # define PLAYER_SPRITE_FRAME_8 "Tiles/player/player(frame8).xpm"
 
+/* player d animation sprites */
+# define PLAYER_D_SPRITE_FRAME_1 "Tiles/player/player_d/player_d(frame1).xpm"
+# define PLAYER_D_SPRITE_FRAME_2 "Tiles/player/player_d/player_d(frame2).xpm"
+# define PLAYER_D_SPRITE_FRAME_3 "Tiles/player/player_d/player_d(frame3).xpm"
+# define PLAYER_D_SPRITE_FRAME_4 "Tiles/player/player_d/player_d(frame4).xpm"
+# define PLAYER_D_SPRITE_FRAME_5 "Tiles/player/player_d/player_d(frame4).xpm"
+# define PLAYER_D_SPRITE_FRAME_6 "Tiles/player/player_d/player_d(frame4).xpm"
+# define PLAYER_D_SPRITE_FRAME_7 "Tiles/player/player_d/player_d(frame4).xpm"
+# define PLAYER_D_SPRITE_FRAME_8 "Tiles/player/player_d/player_d(frame4).xpm"
+
 /* player inverted animation sprites */
 # define PLAYER_INV_SPRITE_FRAME_1 "Tiles/player_inv/player_inv(frame1).xpm"
 # define PLAYER_INV_SPRITE_FRAME_2 "Tiles/player_inv/player_inv(frame2).xpm"
@@ -32,6 +42,16 @@
 # define PLAYER_INV_SPRITE_FRAME_6 "Tiles/player_inv/player_inv(frame6).xpm"
 # define PLAYER_INV_SPRITE_FRAME_7 "Tiles/player_inv/player_inv(frame7).xpm"
 # define PLAYER_INV_SPRITE_FRAME_8 "Tiles/player_inv/player_inv(frame8).xpm"
+
+/* player inverted d animation sprites */
+# define PLAYER_D_INV_SPRITE_FRAME_1 "Tiles/player_inv/player_d_inv/player_d_inv(frame1).xpm"
+# define PLAYER_D_INV_SPRITE_FRAME_2 "Tiles/player_inv/player_d_inv/player_d_inv(frame2).xpm"
+# define PLAYER_D_INV_SPRITE_FRAME_3 "Tiles/player_inv/player_d_inv/player_d_inv(frame3).xpm"
+# define PLAYER_D_INV_SPRITE_FRAME_4 "Tiles/player_inv/player_d_inv/player_d_inv(frame4).xpm"
+# define PLAYER_D_INV_SPRITE_FRAME_5 "Tiles/player_inv/player_d_inv/player_d_inv(frame4).xpm"
+# define PLAYER_D_INV_SPRITE_FRAME_6 "Tiles/player_inv/player_d_inv/player_d_inv(frame4).xpm"
+# define PLAYER_D_INV_SPRITE_FRAME_7 "Tiles/player_inv/player_d_inv/player_d_inv(frame4).xpm"
+# define PLAYER_D_INV_SPRITE_FRAME_8 "Tiles/player_inv/player_d_inv/player_d_inv(frame4).xpm"
 
 /* collectable animation sprites */
 # define COLLECT_SPRITE_FRAME_1 "Tiles/collectable/collectable(frame1).xpm"
