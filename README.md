@@ -1,3 +1,12 @@
+git clone https://github.com/Nihilantropy/so_long.git
+
+cd so_long
+
+choose the version of your OS and enter with cd.
+
+make
+
+./so_long map/map10.ber (this is an exemple of map, you can choose whatever map you want, or wve create your own!)
 
 This is the so_long project for the 42 school. Enjoy and try to discover all the secrets!
 
