@@ -9,7 +9,13 @@ In case the messages aren't helpfull and you are a real digger, open the code, t
 
 So, now that you've discovered the secret, it's time to... what? Unlock it? How? READ THE SUBJECT! (not the real one, just read the message).
 
-At this point you should be able to enter, but in case your sight is not that sharp here's an hint: kill all the enemies and smash that pipi on the wall (any wall will work). For how many times? Look the code my friend, or just count... but be fast.
+At this point you should be able to enter, but in case your sight is not that sharp here's an hint: 
+(SPOILER ALERT!!!!)
+(SPOILER ALERT!!!!)
+(SPOILER ALERT!!!!)
+(SPOILER ALERT!!!!)
+(SPOILER ALERT!!!!)
+ kill all the enemies and smash that pipi on the wall (any wall will work). For how many times? Look the code my friend, or just count... but be fast.
 
 Now the real challenge! Will you be able to destroy your secret enemy (aka. BOB)?
 If you are too lazy to fight, try to smash some keyboard button (for the love of god look at the messages, or just take a look at the code).
