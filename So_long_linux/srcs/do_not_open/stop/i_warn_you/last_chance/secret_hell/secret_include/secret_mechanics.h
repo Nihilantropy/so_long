@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 15:13:17 by crea              #+#    #+#             */
-/*   Updated: 2024/04/09 17:53:28 by crea             ###   ########.fr       */
+/*   Updated: 2024/04/23 15:13:44 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@
 
 # define BOSS_MOVE_PROB 10
 
-# define CHEAT "killboss"
+# define CHEAT "kbss"
 
 #endif

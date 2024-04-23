@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 12:10:02 by crea              #+#    #+#             */
-/*   Updated: 2024/04/09 15:02:23 by crea             ###   ########.fr       */
+/*   Updated: 2024/04/23 15:07:16 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 static void	build_boss_weapon_frame(t_secret_game *secret_game)
 {
-	int	i;
-
-	i = 0;
 	secret_game->tiles.boss.weapon_frames = malloc(sizeof(void *) * BOSS_WEAPON_FRAMES);
 	if (!secret_game->tiles.boss.weapon_frames)
 		ft_exit_error(UHHEH_REII_MUQFED_QBBES_VHQCU);

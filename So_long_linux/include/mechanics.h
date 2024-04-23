@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 12:27:09 by crea              #+#    #+#             */
-/*   Updated: 2024/04/06 00:24:55 by crea             ###   ########.fr       */
+/*   Updated: 2024/04/23 15:15:17 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # define ENEMY_MOVE_PROB 25
 
 /* player power up time */
-# define THE_D_BURNS 3000
+# define THE_D_BURNS 5000
 
 # define BREACH 20
 

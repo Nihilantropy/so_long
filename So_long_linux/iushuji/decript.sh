@@ -1,8 +1,10 @@
 #!/bin/bash
 
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 decode_and_replace() {
-    local file_path="$1"
-    local search_dir="$2"
+    local file_path="$script_dir/$1"  # Aggiungi $script_dir al percorso del file
+    local search_dir="$script_dir/$2"  # Aggiungi $script_dir al percorso della directory di ricerca
     
     while IFS= read -r line; do
         if [[ "$line" == "# define"* && ! "$line" =~ "ifndef|endif" ]]; then
@@ -20,27 +22,32 @@ decode_and_replace() {
             echo "Decoded string: $decoded_string"
 
             # Replace variables with Decoded ones
-            sed -i '' "s/# define $variable \"\\\\n$string\\\\n\"/# define $decoded_variable \"\\\\n$decoded_string\\\\n\"/g" "$file_path"
+            sed -i "s/# define $variable \"\\\\n$string\\\\n\"/# define $decoded_variable \"\\\\n$decoded_string\\\\n\"/g" "$file_path"
 
             if $first_search; then
-                grep -rl "$variable" "$search_dir"/*.c | while read -r c_file; do
-                    echo "Found $variable in $c_file"
-                    sed -i '' "s/$variable/$decoded_variable/g" "$c_file"
-                    echo "Replaced variable in $c_file"
+                for c_file in "$search_dir"/*.c; do
+                    if grep -q "$variable" "$c_file"; then
+                        echo "Found $variable in $c_file"
+                        sed -i "s/$variable/$decoded_variable/g" "$c_file"
+                        echo "Replaced variable in $c_file"
+                    fi
                 done
             fi
         fi
     done < "$file_path"
 }
 
+# Assicurati che gli script eseguibili siano presenti nella directory corretta
+cd "$script_dir/roba_inutile_di_lavoro"
+
 # Decode and replace for messages.h and files in srcs directory and in secret_srcs directory
-file_path_1="../include/messages.h"
-search_dir_1="../srcs"
-search_dir_2="../srcs/do_not_open/stop/i_warn_you/last_chance/secret_hell/secret_srcs"
+file_path_1="include/messages.h"
+search_dir_1="srcs"
+search_dir_2="srcs/do_not_open/stop/i_warn_you/last_chance/secret_hell/secret_srcs"
 decode_and_replace "$file_path_1" "$search_dir_1"
 
 # Decode and replace for outer_messages.h and files in secret_srcs directory
-file_path_2="../include/outer_messages.h"
+file_path_2="include/outer_messages.h"
 decode_and_replace "$file_path_2" "$search_dir_2"
 
 echo "Files successfully decrypted"

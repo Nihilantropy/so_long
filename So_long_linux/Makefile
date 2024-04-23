@@ -29,12 +29,13 @@ LIBFT		= libft.a
 PRINTF_DIR	= ./ft_printf
 PRINTF_LIB	= libft_printf.a
 
-MLX_DIR		= ./
-MLX_LIB		= libmlx.a
+MLX_DIR		= ./minilibx-linux
+MLX_LIB		= libmlx_Linux.a
 
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
-RM = rm -f
+RM 			= rm -f
+LINK 		= -lX11 -lXext -lm
 
 # Include directory for header files
 INC 		= -I$(SOLONG_HEAD) -I$(LIBFT_DIR) -I$(PRINTF_DIR) -I$(MLX_DIR)
@@ -43,10 +44,10 @@ SECRET_INC	= -I$(SOLONG_HEAD) -I$(SECRET_HEAD) -I$(LIBFT_DIR) -I$(PRINTF_DIR) -I
 
 # Compilation rule for the program
 $(NAME): $(LIBFT) $(PRINTF_LIB) $(MLX_LIB) $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -L$(LIBFT_DIR) -lft -L$(PRINTF_DIR) -lft_printf -L$(MLX_DIR) -lmlx -lX11 -lXext -lm -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) -L$(LIBFT_DIR) -lft -L$(PRINTF_DIR) -lft_printf -L$(MLX_DIR) -lmlx_Linux $(LINK) -o $(NAME)
 
 $(SECRET_NAME): $(LIBFT) $(PRINTF_LIB) $(MLX_LIB) $(OBJS) $(SECRET_OBJS)
-	$(CC) $(CFLAGS) $(OBJS) $(SECRET_OBJS) -L$(LIBFT_DIR) -lft -L$(PRINTF_DIR) -lft_printf -L$(MLX_DIR) -lmlx -lX11 -lXext -lm -o $(SECRET_NAME)
+	$(CC) $(CFLAGS) $(OBJS) $(SECRET_OBJS) -L$(LIBFT_DIR) -lft -L$(PRINTF_DIR) -lft_printf -L$(MLX_DIR) -lmlx_Linux $(LINK) -o $(SECRET_NAME)
 
 
 # Rule to compile object files
@@ -64,6 +65,10 @@ $(LIBFT):
 $(PRINTF_LIB):
 	$(MAKE) -C $(PRINTF_DIR)
 
+# Rule to make libmlx_Linux
+$(MLX_LIB):
+	$(MAKE) -C $(MLX_DIR)
+
 all:		$(NAME)
 
 secret_all:	$(SECRET_NAME)
@@ -77,6 +82,7 @@ fclean:		clean
 			$(RM) $(NAME) $(SECRET_NAME)
 			$(MAKE) -C $(LIBFT_DIR) fclean
 			$(MAKE) -C $(PRINTF_DIR) fclean
+			$(MAKE) -C $(MLX_DIR) clean
 
 re:			fclean all
 

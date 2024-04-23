@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   update.c                                           :+:      :+:    :+:   */
+/*   mlx_destroy_display.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
+/*   By: mg <mg@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/30 11:13:25 by crea              #+#    #+#             */
-/*   Updated: 2024/04/23 15:07:19 by crea             ###   ########.fr       */
+/*   Created: 2020/10/03 18:56:35 by mg                #+#    #+#             */
+/*   Updated: 2020/10/04 01:55:35 by mg               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/so_long.h"
+#include "mlx_int.h"
 
-int	game_update(t_game *game)
+int	mlx_destroy_display(t_xvar *xvar)
 {
-
-
-
-	if (current_timestamp() - game->powerup.time >= THE_D_BURNS)
-		depression_of_the_d(game);
-	update_animations(game);
-	enemy_patrol(game);
-	return (0);
+	XCloseDisplay(xvar->display);
 }

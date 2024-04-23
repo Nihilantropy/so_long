@@ -6,7 +6,7 @@
 /*   By: crea <crea@student.42roma.it>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 17:46:20 by crea              #+#    #+#             */
-/*   Updated: 2024/04/13 11:53:59 by crea             ###   ########.fr       */
+/*   Updated: 2024/04/23 15:00:22 by crea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -414,5 +414,10 @@ void	destroy_enemy(t_game *game);
 /* player mechanics utils */
 void	get_enemy_target(t_game *game, int new_x, int new_y);
 void	remove_enemy_from_matrix(t_game *game);
+
+
+
+
+
 
 #endif
