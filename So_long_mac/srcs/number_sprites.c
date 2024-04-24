@@ -4,7 +4,7 @@ static void	build_number_img_array(t_game *game)
 {
 	game->tiles.number.count = malloc(sizeof(t_number_sprite) * 10);
 	if (!game->tiles.number.count)
-		ft_exit_error(UHHEH_DKCRUH_YCW_QBBES);
+		ft_exit_error(ERROR_NUMBER_IMG_ALLOC);
 
 }
 
@@ -26,7 +26,7 @@ void	load_number_images(t_game *game)
 	{
 		game->tiles.number.count[i] = mlx_xpm_file_to_image(game->mlx_ptr, number_sprite_paths[i], &width, &height);
 		if (game->tiles.number.count[i] == NULL)
-			ft_exit_error(UHHEH_DKCRUH_YCW_KFBEQT);
+			ft_exit_error(ERROR_NUMBER_IMG_UPLOAD);
 		i++;
 	}
 }

@@ -16,7 +16,7 @@ void	secret_cheat_init(t_secret_game *secret_game)
 {
 	secret_game->cheat = malloc(sizeof(char) * ft_strlen(CHEAT) + 1);
 	if (!secret_game->cheat)
-		ft_exit_error(UHHEH_SXUQJ_QBBES);
+		ft_exit_error(ERROR_CHEAT_ALLOC);
 	ft_strlcpy(secret_game->cheat, CHEAT, (ft_strlen(CHEAT) + 1));
 }
 
@@ -24,7 +24,7 @@ void	secret_key_close(t_secret_game *secret_game, int keycode)
 {
 	if (keycode == ESC)
 	{
-		ft_printf(IUSHUJ_UQHBO_WQCU_SBEIU);
+		ft_printf(SECRET_EARLY_GAME_CLOSE);
 		secret_close_game(secret_game);
 	}
 }
@@ -37,7 +37,7 @@ int	secret_cheat(t_secret_game *secret_game, int keycode)
 		secret_game->cheat_index++;
 		if (secret_game->cheat_index == ft_strlen(secret_game->cheat))
 		{
-			ft_printf(SXUQJ_TEDU);
+			ft_printf(CHEAT_DONE);
 			kill_boss(secret_game);
 			secret_game->pause = false;
 			secret_main(secret_game);
@@ -51,7 +51,7 @@ int	secret_cheat(t_secret_game *secret_game, int keycode)
 	}
 	else
 	{
-		ft_printf(SXUQJ_UHHEH);
+		ft_printf(CHEAT_ERROR);
     	secret_game->cheat_index = 0;
 	}
 	return (0);

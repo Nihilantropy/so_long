@@ -20,7 +20,7 @@ void	build_bool_matrix(t_game *game, char ***visited)
 	y = 0;
 	*visited = (char **)malloc(sizeof(char *) * game->map.row);
 	if (!visited)
-		ft_exit_error(UHHEH_REEB_CQJHYN_QBBES);
+		ft_exit_error(ERROR_BOOL_MATRIX_ALLOC);
 	while (y < game->map.row)
 	{
 		(*visited)[y] = (char *)malloc(sizeof(char) * game->map.col);
@@ -29,7 +29,7 @@ void	build_bool_matrix(t_game *game, char ***visited)
 			while (--y >= 0)
 				free ((*visited)[y]);
 			free(*visited);
-			ft_exit_error(UHHEH_REEB_CQJHYN_QBBES);
+			ft_exit_error(ERROR_BOOL_MATRIX_ALLOC);
 		}
 		x = 0;
 		while (x < game->map.col)

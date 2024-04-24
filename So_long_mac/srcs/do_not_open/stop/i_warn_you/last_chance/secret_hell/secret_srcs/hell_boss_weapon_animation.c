@@ -19,7 +19,7 @@ static void	build_boss_weapon_frame(t_secret_game *secret_game)
 	i = 0;
 	secret_game->tiles.boss.weapon_frames = malloc(sizeof(void *) * BOSS_WEAPON_FRAMES);
 	if (!secret_game->tiles.boss.weapon_frames)
-		ft_exit_error(UHHEH_REII_MUQFED_QBBES_VHQCU);
+		ft_exit_error(ERROR_BOSS_WEAPON_ALLOC_FRAME);
 }
 
 void	load_boss_weapon_images(t_secret_game *secret_game)
@@ -38,7 +38,7 @@ void	load_boss_weapon_images(t_secret_game *secret_game)
 	{
 		secret_game->tiles.boss.weapon_frames[i] = mlx_xpm_file_to_image(secret_game->mlx_ptr, boss_weapon_frames_paths[i], &width, &height);
 		if (secret_game->tiles.boss.weapon_frames[i] == NULL)
-			exit(ft_printf(UHHEH_REII_MUQFED_YCW_KFBEQT));
+			exit(ft_printf(ERROR_BOSS_WEAPON_IMG_UPLOAD));
 		i++;
 	}
 }

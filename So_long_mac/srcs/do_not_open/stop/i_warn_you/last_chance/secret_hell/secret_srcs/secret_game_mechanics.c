@@ -15,11 +15,11 @@
 void	secret_player_win(t_secret_game *secret_game)
 {
 	if (secret_game->game->moves <= 100 && !secret_game->cheat_done)
-		ft_printf(IUSHUJ_MYD_CIW);
+		ft_printf(SECRET_WIN_MSG);
 	else if (secret_game->game->moves > 100 && !secret_game->cheat_done)
-		ft_printf(IUSHUJ_MYD_ZEAU);
+		ft_printf(SECRET_WIN_JOKE);
 	else if (secret_game->cheat_done)
-		ft_printf(SXUQJUH_MYD_CIW);
+		ft_printf(CHEATER_WIN_MSG);
 	secret_close_game(secret_game);
 }
 

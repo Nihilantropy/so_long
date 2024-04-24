@@ -20,7 +20,7 @@ void	get_map_size(t_game *game, char *map_file)
 	fd = open(map_file, O_RDONLY);
 	if (fd == -1)
 	{
-		perror(UHHEH_SQDJ_EFUD_CQF_VYBU);
+		perror(ERROR_CANT_OPEN_MAP_FILE);
 		exit(0);
 	}
 	line = get_next_line(fd);
@@ -101,7 +101,7 @@ void	save_player_pos(t_game *game)
 			{
 				game->map.player_pos.x = x;
 				game->map.player_pos.y = y;
-				ft_printf(FBQOUH_FEI);
+				ft_printf(PLAYER_POS);
 				return ;
 			}
 			x++;

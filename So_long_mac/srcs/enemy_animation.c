@@ -30,7 +30,7 @@ void load_enemy_images(t_game *game)
     {
         game->tiles.enemy.frames[i] = mlx_xpm_file_to_image(game->mlx_ptr, enemy_frames_paths[i], &width, &height);
         if (game->tiles.enemy.frames[i] == NULL)
-            exit(ft_printf(UHHEH_UDUCO_YCW_KFBEQT));
+            exit(ft_printf(ERROR_ENEMY_IMG_UPLOAD));
         i++;
     }
 }

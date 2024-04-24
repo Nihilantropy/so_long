@@ -88,7 +88,7 @@ static void	put_boss(t_secret_game *secret_game)
 	secret_game->game->map.matrix[y][x] = BOSS;
 	secret_game->boss.pos.y = y;
 	secret_game->boss.pos.x = x;
-	ft_printf(REII_FEIYJYED);
+	ft_printf(BOSS_POSITION);
 	print_matrix(secret_game->game);
 	return ;
 }

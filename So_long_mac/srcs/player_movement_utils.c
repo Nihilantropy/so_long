@@ -21,7 +21,7 @@ int	is_valid_move(t_game *game, int new_x, int new_y, int keycode)
 		return (0);
 	if (game->map.collect != 0 && game->map.matrix[new_y][new_x] == EXIT)
 	{
-		ft_printf(UHHEH_UNYJ_DEJ_EFUD);
+		ft_printf(ERROR_EXIT_NOT_OPEN);
 		return (0);
 	}
 	if (keycode == W || keycode == A || keycode == S || keycode == D ||
@@ -31,7 +31,7 @@ int	is_valid_move(t_game *game, int new_x, int new_y, int keycode)
 		return (1);
 	}
 	else
-		ft_printf(UHHEH_YDLQBYT_AUO);
+		ft_printf(ERROR_INVALID_KEY);
 	return (0);
 }
 
@@ -52,9 +52,9 @@ void	update_collect_count(t_game *game, int new_x, int new_y)
 	{
 		game->map.collect--;
 		if (game->map.collect > 1)
-			ft_printf(SEBBUSJQRBUI_DRH);
+			ft_printf(COLLECTABLES_NBR);
 		else if (game->map.collect == 1)
-			ft_printf(QBB_SEBBUSJ_FYSAUTKF);
+			ft_printf(ALL_COLLECT_PICKEDUP);
 		power_of_the_d(game);
 	}
 }

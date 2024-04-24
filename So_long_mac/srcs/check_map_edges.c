@@ -21,12 +21,12 @@ int	check_top_map(t_game *game)
 	{
 		if (game->map.matrix[0][x] != WALL)
 		{
-			ft_printf(UHHEH_CQF_JEF);
+			ft_printf(ERROR_MAP_TOP);
 			return (0);
 		}
 		x++;
 	}
-	return (ft_printf(CQF_JEF_EA));
+	return (ft_printf(MAP_TOP_OK));
 }
 
 int	check_bottom_map(t_game *game)
@@ -39,12 +39,12 @@ int	check_bottom_map(t_game *game)
 	{
 		if (game->map.matrix[game->map.row - 1][x] != WALL)
 		{
-			ft_printf(UHHEH_CQF_REJJEC);
+			ft_printf(ERROR_MAP_BOTTOM);
 			return (0);
 		}
 		x++;
 	}
-	return (ft_printf(CQF_REJJEC_EA));
+	return (ft_printf(MAP_BOTTOM_OK));
 }
 
 int	check_map_sides(t_game *game)
@@ -57,12 +57,12 @@ int	check_map_sides(t_game *game)
 		if (game->map.matrix[y][0] != WALL
 			|| game->map.matrix[y][game->map.col - 1] != WALL)
 		{
-			ft_printf(UHHEH_CQF_IYTUI);
+			ft_printf(ERROR_MAP_SIDES);
 			return (0);
 		}
 		y++;
 	}
-	return (ft_printf(CQF_IYTUI_EA));
+	return (ft_printf(MAP_SIDES_OK));
 }
 
 int	check_if_rect(t_game *game)
@@ -78,11 +78,11 @@ int	check_if_rect(t_game *game)
 			x++;
 		if (game->map.col != x)
 		{
-			ft_printf(UHHEH_CQF_HUSJ);
+			ft_printf(ERROR_MAP_RECT);
 			return (0);
 		}
 		else
 			y++;
 	}
-	return (ft_printf(CQF_HUSJ_EA));
+	return (ft_printf(MAP_RECT_OK));
 }

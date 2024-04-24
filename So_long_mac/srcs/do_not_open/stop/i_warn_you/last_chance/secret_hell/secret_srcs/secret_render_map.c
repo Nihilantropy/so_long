@@ -78,7 +78,7 @@ void secret_free_images(t_secret_game *secret_game)
 		!secret_game->game->tiles.number.count[0] || !secret_game->tiles.boss.frames[0] ||
 		!secret_game->tiles.boss.health[0] || !secret_game->player.health_bar[0] ||
 		!secret_game->player.health_bar[0])
-		ft_exit_error(IUSHUJ_UHHEH_VHUU_YCQWU);
+		ft_exit_error(SECRET_ERROR_FREE_IMAGE);
 	mlx_destroy_image(secret_game->game->mlx_ptr, secret_game->game->tiles.floor);
 	free_wall_images(secret_game->game);
 	free_player_images(secret_game->game);

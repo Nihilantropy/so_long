@@ -30,10 +30,10 @@ int	check_map_player(t_game *game)
 		y++;
 	}
 	if (game->map.player == 1)
-		return (ft_printf(SEHHUSJ_FBQOUH_DRH));
+		return (ft_printf(CORRECT_PLAYER_NBR));
 	else
 	{
-		ft_printf(UHHEH_FBQOUH_DRH);
+		ft_printf(ERROR_PLAYER_NBR);
 		return (0);
 	}
 }
@@ -56,9 +56,9 @@ int	check_map_collect(t_game *game)
 		y++;
 	}
 	if (game->map.collect > 0)
-		return (ft_printf(SEHHUSJ_SEBBUSJ_DRH));
+		return (ft_printf(CORRECT_COLLECT_NBR));
 	else
-		ft_printf(UHHEH_SEBBUSJ_DRH);
+		ft_printf(ERROR_COLLECT_NBR);
 	return (0);
 }
 
@@ -80,10 +80,10 @@ int	check_map_exit(t_game *game)
 		y++;
 	}
 	if (game->map.exit == 1)
-		return (ft_printf(SEHHUSJ_UNYJ_DRH));
+		return (ft_printf(CORRECT_EXIT_NBR));
 	else
 	{
-		ft_printf(UHHEH_UNYJ_DRH);
+		ft_printf(ERROR_EXIT_NBR);
 		return (0);
 	}
 }
@@ -107,11 +107,11 @@ int	check_map_enemy(t_game *game)
 	}
 	game->map.enemies_alive = game->map.enemies;
 	if (game->map.enemies == 1)
-		return (ft_printf(UDUCO_DRH));
+		return (ft_printf(ENEMY_NBR));
 	else if (game->map.enemies > 1)
-		return (ft_printf(UDUCYUI_DRH));
+		return (ft_printf(ENEMIES_NBR));
 	else
-		return(ft_printf(DE_UDUCO));
+		return(ft_printf(NO_ENEMY));
 }
 
 
@@ -133,12 +133,12 @@ int	check_wrong_symb(t_game *game)
 				&& game->map.matrix[y][x] != EXIT
 				&& game->map.matrix[y][x] != ENEMY)
 			{
-				ft_printf(UHHEH_IOCREB_YD_CQF);
+				ft_printf(ERROR_SYMBOL_IN_MAP);
 				return (0);
 			}
 			x++;
 		}
 		y++;
 	}
-	return (ft_printf(SEHHUSJ_IOCREBI_YD_CQF));
+	return (ft_printf(CORRECT_SYMBOLS_IN_MAP));
 }

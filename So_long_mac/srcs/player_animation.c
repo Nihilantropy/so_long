@@ -29,7 +29,7 @@ void load_player_images(t_game *game)
     {
         game->tiles.player.frames[i] = mlx_xpm_file_to_image(game->mlx_ptr, player_frames_paths[i], &width, &height);
         if (game->tiles.player.frames[i] == NULL)
-            exit(ft_printf(UHHEH_FBQOUH_YCW_KFBEQT));
+            exit(ft_printf(ERROR_PLAYER_IMG_UPLOAD));
         i++;
     }
 }

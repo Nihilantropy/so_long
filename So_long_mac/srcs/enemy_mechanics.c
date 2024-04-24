@@ -17,7 +17,7 @@ int	enemy_bump_player(t_game *game, int new_x, int new_y)
 {
 	if (game->map.matrix[new_y][new_x] == PLAYER && !game->powerup.the_d)
 	{
-		player_lose(game, FBQOUH_WEJ_SQKWXJ);
+		player_lose(game, PLAYER_GOT_CAUGHT);
 		return (1);
 	}
 	else if (game->map.matrix[new_y][new_x] == PLAYER && game->powerup.the_d)
@@ -98,16 +98,16 @@ void	self_destroy(t_game *game)
 		game->map.enemies_alive--;
 		if (game->map.enemies_alive > 1)
 		{
-			ft_printf(UDUCO_RKCF_FBQOUH);
-			ft_printf(UDUCYUI_QBYLU_DRH);
+			ft_printf(ENEMY_BUMP_PLAYER);
+			ft_printf(ENEMIES_ALIVE_NBR);
 		}
 		else if (game->map.enemies_alive == 1)
 		{
-			ft_printf(UDUCO_RKCF_FBQOUH);
-			ft_printf(UDUCO_QBYLU_1);
+			ft_printf(ENEMY_BUMP_PLAYER);
+			ft_printf(ENEMY_ALIVE_1);
 		}
 		else if (game->map.enemies_alive == 0)
-			ft_printf(DE_CEHU_UDUCYUI);
+			ft_printf(NO_MORE_ENEMIES);
 	}
 	game->map.matrix[enemy_pos_y][enemy_pos_x] = FLOOR;
 	return ;

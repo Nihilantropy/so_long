@@ -17,7 +17,7 @@ void	get_map(t_game *game, char *map_file)
 	get_map_size(game, map_file);
 	game->map.matrix = malloc(game->map.row * sizeof(char *));
 	if (!game->map.matrix)
-		ft_exit_error(UHHEH_CQJHYN_QBBES);
+		ft_exit_error(ERROR_MATRIX_ALLOC);
 	if (!build_matrix(game, map_file))
 		exit(0);
 	else
@@ -55,5 +55,5 @@ int	check_matrix(t_game *game)
 		|| !check_wrong_symb(game) || !is_map_complete(game))
 		return (0);
 	else
-		return (ft_printf(CQF_SXUSA_EA));
+		return (ft_printf(MAP_CHECK_OK));
 }

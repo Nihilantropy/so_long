@@ -73,7 +73,7 @@ void	create_pause_screen(t_secret_game *secret_game)
 	secret_game->tiles.pause.stop = mlx_xpm_file_to_image(secret_game->mlx_ptr, PAUSE_LOGO_SPRITE, &width, &height);
 	secret_game->tiles.pause.screen = mlx_new_image(secret_game->mlx_ptr, TILE_SIZE, TILE_SIZE);
 	if (!secret_game->tiles.pause.screen)
-		ft_exit_error(UHHEH_SHUQJU_FKQIU_YCQWU);
+		ft_exit_error(ERROR_CREATE_PUASE_IMAGE);
 	unsigned int *image_data = (unsigned int *)mlx_get_data_addr(secret_game->tiles.pause.screen,
 																&(int){0}, &(int){0}, &(int){0});
 	unsigned int gray_color = 0x808080;
