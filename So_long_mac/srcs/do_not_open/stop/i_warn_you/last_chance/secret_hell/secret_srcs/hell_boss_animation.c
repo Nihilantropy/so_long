@@ -19,7 +19,7 @@ static void	build_boss_frame(t_secret_game *secret_game)
 	i = 0;
 	secret_game->tiles.boss.frames = malloc(sizeof(void *) * BOSS_ANIM_FRAMES);
 	if (!secret_game->tiles.boss.frames)
-		ft_exit_error(ERROR_BOSS_ALLOC_FRAME);
+		ft_exit_error(UHHEH_REII_QBBES_VHQCU);
 }
 
 void	load_boss_images(t_secret_game *secret_game)
@@ -39,7 +39,7 @@ void	load_boss_images(t_secret_game *secret_game)
 	{
 		secret_game->tiles.boss.frames[i] = mlx_xpm_file_to_image(secret_game->mlx_ptr, boss_frames_paths[i], &width, &height);
 		if (secret_game->tiles.boss.frames[i] == NULL)
-			exit(ft_printf(ERROR_BOSS_IMG_UPLOAD));
+			exit(ft_printf(UHHEH_REII_YCW_KFBEQT));
 		i++;
 	}
 }

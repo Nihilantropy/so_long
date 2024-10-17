@@ -24,7 +24,7 @@ void	boss_shoot(t_secret_game *secret_game, int new_x, int new_y)
 		if (secret_game->game->map.matrix[new_y][new_x] == FLOOR)
 			secret_game->game->map.matrix[new_y][new_x] = WEAPON;
 		if (secret_game->game->map.matrix[new_y][new_x] == PLAYER)
-			player_lose(secret_game->game, BOSS_DESTROY_PLAYER);
+			player_lose(secret_game->game, REII_TUIJHEO_FBQOUH);
 			//player_death_countdown(secret_game, new_x, new_y);
 	}
 }
@@ -38,17 +38,17 @@ void	player_death_countdown(t_secret_game *secret_game, int new_x, int new_y)
 		if (secret_game->game->map.player_pos.x == new_x && secret_game->game->map.player_pos.y == new_y)
 		{
 			if (!secret_game->game->powerup.the_d)
-				player_lose(secret_game->game, BOSS_DESTROY_PLAYER);
+				player_lose(secret_game->game, REII_TUIJHEO_FBQOUH);
 			else if (secret_game->game->powerup.the_d && secret_game->player.health > 0)
 			{
-				ft_printf(BOSS_HIT_PLAYER);
+				ft_printf(REII_XYJ_FBQOUH);
 				update_player_health(secret_game);
 			}
 			else if (secret_game->player.health == 0)
 			{
 				secret_game->tiles.boss.current_weap_frame = BOSS_WEAPON_FRAMES - 2;
 				secret_game->game->map.matrix[new_y][new_x] = WEAPON;
-				player_lose(secret_game->game, BOSS_DESTROY_PLAYER);
+				player_lose(secret_game->game, REII_TUIJHEO_FBQOUH);
 			}
 		}
 	}

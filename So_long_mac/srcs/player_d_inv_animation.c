@@ -29,7 +29,7 @@ void load_player_d_inv_images(t_game *game)
     {
         game->tiles.player_d_inv.frames[i] = mlx_xpm_file_to_image(game->mlx_ptr, player_frames_paths[i], &width, &height);
         if (game->tiles.player_d_inv.frames[i] == NULL)
-            exit(ft_printf(ERROR_PLAYER_D_INV_IMG_UPLOAD));
+            exit(ft_printf(UHHEH_FBQOUH_T_YDL_YCW_KFBEQT));
         i++;
     }
 }

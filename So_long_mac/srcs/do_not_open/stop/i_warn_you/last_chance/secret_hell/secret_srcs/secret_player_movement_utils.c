@@ -26,7 +26,7 @@ int	secret_is_valid_move(t_secret_game *secret_game, int new_x, int new_y, int k
 		return (0);
 	if (secret_game->game->map.collect != 0 && secret_game->game->map.matrix[new_y][new_x] == EXIT)
 	{
-		ft_printf(SECRET_ERROR_EXIT_NOT_OPEN);
+		ft_printf(IUSHUJ_UHHEH_UNYJ_DEJ_EFUD);
 		return (0);
 	}
 	if (keycode == W || keycode == A || keycode == S || keycode == D ||
@@ -36,7 +36,7 @@ int	secret_is_valid_move(t_secret_game *secret_game, int new_x, int new_y, int k
 		return (1);
 	}
 	else
-		ft_printf(SECRET_ERROR_INVALID_KEY);
+		ft_printf(IUSHUJ_UHHEH_YDLQBYT_AUO);
 	return (0);
 }
 
@@ -46,9 +46,9 @@ void	secret_update_collect_count(t_secret_game *secret_game, int new_x, int new_
 	{
 		secret_game->game->map.collect--;
 		if (secret_game->game->map.collect > 0)
-			ft_printf(SECRET_COLLECTABLES_NBR);
+			ft_printf(IUSHUJ_SEBBUSJQRBUI_DRH);
 		else if (secret_game->game->map.collect == 0)
-			ft_printf(SECRET_ALL_COLLECT_PICKEDUP);
+			ft_printf(IUSHUJ_QBB_SEBBUSJ_FYSAUTKF);
 		power_of_the_d(secret_game->game);
 	}
 }

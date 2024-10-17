@@ -22,7 +22,7 @@ void    escape_hell(t_game *game)
 	secret_game.mlx_win = game->mlx_win;
 	secret_game.game->moves = 0;
     secret_game.game->map.collect = 0;
-	ft_printf(ESCAPED);
+	ft_printf(UISQFUT);
 	init_secret_hell(&secret_game);
 	secret_main(&secret_game);
 	return ;
@@ -66,7 +66,7 @@ int	secret_key_press(int keycode, t_secret_game *secret_game)
 {
 	if (keycode == ESC)
 	{
-		ft_printf(SECRET_EARLY_GAME_CLOSE);
+		ft_printf(IUSHUJ_UQHBO_WQCU_SBEIU);
 		secret_close_game(secret_game);
 	}
 	if (keycode == PAUSE)

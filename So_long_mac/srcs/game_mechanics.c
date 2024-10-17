@@ -22,7 +22,7 @@ void	player_lose(t_game *game, char *reason)
 void	exit_lose(t_game *game)
 {
 	if (game->lose == true)
-		ft_printf(GAME_LOST);
+		ft_printf(WQCU_BEIJ);
 	close_game(game);
 }
 
@@ -30,13 +30,13 @@ void	player_win(t_game *game)
 {
 	if (game->moves <= 50)
 	{
-		ft_printf(WIN_MSG);
-		ft_printf(FINAL_MOVE);
+		ft_printf(MYD_CIW);
+		ft_printf(VYDQB_CELU);
 	}
 	else
 	{
-		ft_printf(FINAL_JOKE);
-		ft_printf(WIN_JOKE);
+		ft_printf(VYDQB_ZEAU);
+		ft_printf(MYD_ZEAU);
 	}
 	close_game(game);
 }

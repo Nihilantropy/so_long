@@ -14,107 +14,107 @@
 # define MESSAGES_H
 
 /* main */
-# define ERROR_ARG_NBR "\nError. Choose a map!\n"
+# define UHHEH_QHW_DRH "\nUhheh. Sxeeiu q cqf!\n"
 
 /* check_map_extention */
-# define CORRECT_MAP_EXT "\nMap extention in good! Bravo!\n"
-# define ERROR_MAP_EXT "\nError. Wrong map extention! .ber is not that hard... Not that easy too tho.\n"
+# define SEHHUSJ_CQF_UNJ "\nCqf unjudjyed yd weet! Rhqle!\n"
+# define UHHEH_CQF_UNJ "\nUhheh. Mhedw cqf unjudjyed! .ruh yi dej jxqj xqht... Dej jxqj uqio jee jxe.\n"
 
 /* get_map */
-# define ERROR_MATRIX_ALLOC "\nError. Can't allocate memory for the map! Nothing else to say...\n"
-# define MAP_CHECK_OK "\nALL good! Go haed hellwalker Skeletronk!\n"
+# define UHHEH_CQJHYN_QBBES "\nUhheh. Sqd'j qbbesqju cuceho veh jxu cqf! Dejxydw ubiu je iqo...\n"
+# define CQF_SXUSA_EA "\nQBB weet! We xqut xubbmqbauh Iaubujheda!\n"
 
 /* get_map_utils */
-# define PLAYER_POS "\nSkeletronk position is somewhere!\n"
-# define ENEMY_POS "\nEnemy NVM, pos is {x} {y}\n"
-# define ENEMY_ALIVE "\nEnemy boh, is alive.\n"
-# define ENEMY_INDEX "\nEnemy index is i don't know\n"
-# define ENEMY_NEW_POS "\nEnemy (42 doesn't want us to know) new position is {x} {y}\n"
-# define ERROR_CANT_OPEN_MAP_FILE "\nError. Map file can't be open. Have you checked the name of the map file?\n"
+# define FBQOUH_FEI "\nIaubujheda feiyjyed yi iecumxuhu!\n"
+# define UDUCO_FEI "\nUduco DLC, fei yi {n} {o}\n"
+# define UDUCO_QBYLU "\nUduco rex, yi qbylu.\n"
+# define UDUCO_YDTUN "\nUduco ydtun yi y ted'j adem\n"
+# define UDUCO_DUM_FEI "\nUduco (42 teuid'j mqdj ki je adem) dum feiyjyed yi {n} {o}\n"
+# define UHHEH_SQDJ_EFUD_CQF_VYBU "\nUhheh. Cqf vybu sqd'j ru efud. Xqlu oek sxusaut jxu dqcu ev jxu cqf vybu?\n"
 
 /* check_map_interior */
-# define CORRECT_PLAYER_NBR "\nTHE ONE PLAYER START! The one and only... Skeletronk!!!\n"
-# define ERROR_PLAYER_NBR "\nError. Wrong number of player start: 0\n"
-# define CORRECT_EXIT_NBR "\nTHE ONE EXIT! You can escape hell!\n"
-# define ERROR_EXIT_NBR "\nError. Wrong number of exit: 0. What are you? A pussycat?\n"
-# define CORRECT_COLLECT_NBR "\nLots COLLECTABLES to pick up! Your D is knocking on heaven's door!\n"
-# define ERROR_COLLECT_NBR "\nError. Not enoght bones: 0. What about your boner? It's sad, isn't it?\n"
-# define CORRECT_SYMBOLS_IN_MAP "\nAll symbols in map are good! Great job my hellwalker!\n"
-# define ERROR_SYMBOL_IN_MAP "\nError. Wrong symbol in map! Cheating isn't allowd here! Try in 42...\n"
-# define ENEMY_NBR "\n1 ENEMY in hell right now. It's time to turno your punta into a drill!\n"
-# define ENEMIES_NBR "\nA lot of ENEMIES in hell right now. Try to avoid, or give them the punta!\n"
-# define NO_ENEMY "\nThere are no enemies in hell... what an easy life for your lazy ass.\n"
+# define SEHHUSJ_FBQOUH_DRH "\nJXU EDU FBQOUH IJQHJ! Jxu edu qdt edbo... Iaubujheda!!!\n"
+# define UHHEH_FBQOUH_DRH "\nUhheh. Mhedw dkcruh ev fbqouh ijqhj: 0\n"
+# define SEHHUSJ_UNYJ_DRH "\nJXU EDU UNYJ! Oek sqd uisqfu xubb!\n"
+# define UHHEH_UNYJ_DRH "\nUhheh. Mhedw dkcruh ev unyj: 0. Mxqj qhu oek? Q fkiiosqj?\n"
+# define SEHHUSJ_SEBBUSJ_DRH "\nBeji SEBBUSJQRBUI je fysa kf! Oekh T yi adesaydw ed xuqlud'i teeh!\n"
+# define UHHEH_SEBBUSJ_DRH "\nUhheh. Dej udewxj redui: 0. Mxqj qrekj oekh reduh? Yj'i iqt, yid'j yj?\n"
+# define SEHHUSJ_IOCREBI_YD_CQF "\nQbb iocrebi yd cqf qhu weet! Whuqj zer co xubbmqbauh!\n"
+# define UHHEH_IOCREB_YD_CQF "\nUhheh. Mhedw iocreb yd cqf! Sxuqjydw yid'j qbbemt xuhu! Jho yd 42...\n"
+# define UDUCO_DRH "\n1 UDUCO yd xubb hywxj dem. Yj'i jycu je jkhde oekh fkdjq ydje q thybb!\n"
+# define UDUCYUI_DRH "\nQ bej ev UDUCYUI yd xubb hywxj dem. Jho je qleyt, eh wylu jxuc jxu fkdjq!\n"
+# define DE_UDUCO "\nJxuhu qhu de uducyui yd xubb... mxqj qd uqio byvu veh oekh bqpo qii.\n"
 
 /* check_map_edges */
-# define ERROR_MAP_TOP "\nError. Hell top isn't closed! Angles will pee on you!\n"
-# define MAP_TOP_OK "\nHell top is well closed! You won't get wet!\n"
-# define ERROR_MAP_BOTTOM "\nError. Hell boottom isn't closed! You'll drown in pee!\n"
-# define MAP_BOTTOM_OK "\nHell bottom is well closed! You won't drown in pee!\n"
-# define ERROR_MAP_SIDES "\nError. Sides are open! They will reach you...\n"
-# define MAP_SIDES_OK "\nHell sides are well-fanced! They won't be able to reach you...\n"
-# define ERROR_MAP_RECT "\nError. Hell is what? circol? triangle? wtf?! Make a rectangle!\n"
-# define MAP_RECT_OK "\nYour Hell is perfectly square! Top notch!\n"
+# define UHHEH_CQF_JEF "\nUhheh. Xubb jef yid'j sbeiut! Qdwbui mybb fuu ed oek!\n"
+# define CQF_JEF_EA "\nXubb jef yi mubb sbeiut! Oek med'j wuj muj!\n"
+# define UHHEH_CQF_REJJEC "\nUhheh. Xubb reejjec yid'j sbeiut! Oek'bb themd yd fuu!\n"
+# define CQF_REJJEC_EA "\nXubb rejjec yi mubb sbeiut! Oek med'j themd yd fuu!\n"
+# define UHHEH_CQF_IYTUI "\nUhheh. Iytui qhu efud! Jxuo mybb huqsx oek...\n"
+# define CQF_IYTUI_EA "\nXubb iytui qhu mubb-vqdsut! Jxuo med'j ru qrbu je huqsx oek...\n"
+# define UHHEH_CQF_HUSJ "\nUhheh. Xubb yi mxqj? syhseb? jhyqdwbu? mjv?! Cqau q husjqdwbu!\n"
+# define CQF_HUSJ_EA "\nOekh Xubb yi fuhvusjbo igkqhu! Jef dejsx!\n"
 
 /* che_if_map_is_complete */
-# define MAP_CAN_BE_COMPLETED "\nYou can get all your bones and escape! Go get that boner!\n"
-# define ERROR_CANT_REACH_COLLECT "\nError. Some of your bones are trapped! Oh no! Your boner!!!.\n"
-# define ERROR_CANT_REACH_EXIT "\nError. Someone doesn't want you to escape... What a coward.\n"
-# define ERROR_MAP_CANT_BE_COMPLETED "\nYou won't be able to escape hell... Ask your daddy for help.\n"
-# define ERROR_BOOL_MATRIX_ALLOC "\nError. Can't allocate the boolean matrix.\n"
+# define CQF_SQD_RU_SECFBUJUT "\nOek sqd wuj qbb oekh redui qdt uisqfu! We wuj jxqj reduh!\n"
+# define UHHEH_SQDJ_HUQSX_SEBBUSJ "\nUhheh. Iecu ev oekh redui qhu jhqffut! Ex de! Oekh reduh!!!.\n"
+# define UHHEH_SQDJ_HUQSX_UNYJ "\nUhheh. Iecuedu teuid'j mqdj oek je uisqfu... Mxqj q semqht.\n"
+# define UHHEH_CQF_SQDJ_RU_SECFBUJUT "\nOek med'j ru qrbu je uisqfu xubb... Qia oekh tqtto veh xubf.\n"
+# define UHHEH_REEB_CQJHYN_QBBES "\nUhheh. Sqd'j qbbesqju jxu reebuqd cqjhyn.\n"
 
 /* images upload */
-# define ERROR_WALL_IMG_UPLOAD "\nError. Can't upload wall images.\n"
-# define ERROR_PLAYER_IMG_UPLOAD "\nError. Can't upload player images.\n"
-# define ERROR_PLAYER_D_IMG_UPLOAD "\nError. Can't upload player d images.\n"
-# define ERROR_PLAYER_INV_IMG_UPLOAD "\nError. Can't upload player inverted images.\n"
-# define ERROR_PLAYER_D_INV_IMG_UPLOAD "\nError. Can't upload player d inverted images.\n"
-# define ERROR_COLLECT_IMG_UPLOAD "\nError. Can't upload collectable images.\n"
-# define ERROR_EXIT_IMG_UPLOAD "\nError. Can't upload exit images.\n"
-# define ERROR_ENEMY_IMG_UPLOAD "\nError. Can't upload enemy images.\n"
-# define ERROR_NUMBER_IMG_UPLOAD "\nError. Can't upload number images.\n"
+# define UHHEH_MQBB_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt mqbb ycqwui.\n"
+# define UHHEH_FBQOUH_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt fbqouh ycqwui.\n"
+# define UHHEH_FBQOUH_T_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt fbqouh t ycqwui.\n"
+# define UHHEH_FBQOUH_YDL_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt fbqouh ydluhjut ycqwui.\n"
+# define UHHEH_FBQOUH_T_YDL_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt fbqouh t ydluhjut ycqwui.\n"
+# define UHHEH_SEBBUSJ_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt sebbusjqrbu ycqwui.\n"
+# define UHHEH_UNYJ_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt unyj ycqwui.\n"
+# define UHHEH_UDUCO_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt uduco ycqwui.\n"
+# define UHHEH_DKCRUH_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt dkcruh ycqwui.\n"
 
 /* render map */
-# define ERROR_NUMBER_IMG_ALLOC "\nError. Number images can't be allocated.\n"
-# define ERROR_FREE_IMAGE "\nError. Can't deallocate memory for some images.\n"
+# define UHHEH_DKCRUH_YCW_QBBES "\nUhheh. Dkcruh ycqwui sqd'j ru qbbesqjut.\n"
+# define UHHEH_VHUU_YCQWU "\nUhheh. Sqd'j tuqbbesqju cuceho veh iecu ycqwui.\n"
 
 /* player movement_utils */
-# define ERROR_INVALID_ROUT "\nError. Are you trying to brake the wall? What are you, a Pink floyd fan?\n"
-# define ERROR_INVALID_KEY "\nError. Try to smash another button... Or I'll smash your sis.\n"
-# define COLLECTABLES_NBR "\nRemaining bones: a lot! You're boner is getting harder!\n"
-# define ALL_COLLECT_PICKEDUP "\nYou've earned FULL POWER! Don't waste time! Your boner might disappear!\n"
-# define MOVES_NBR "\nYou've made a lot of moves! Keep goin Skeletronk!\n"
-# define ERROR_EXIT_NOT_OPEN "\nError. Do you have all the bones? Are you sure? That doesn't seems a big boner to me...\n"
-# define NEW_PLAYER_POS "\nYour new position is somewhere! Keep navigate hell!\n"
+# define UHHEH_YDLQBYT_HEKJ "\nUhheh. Qhu oek jhoydw je rhqau jxu mqbb? Mxqj qhu oek, q Fyda vbeot vqd?\n"
+# define UHHEH_YDLQBYT_AUO "\nUhheh. Jho je icqix qdejxuh rkjjed... Eh Y'bb icqix oekh iyi.\n"
+# define SEBBUSJQRBUI_DRH "\nHucqydydw redui: q bej! Oek'hu reduh yi wujjydw xqhtuh!\n"
+# define QBB_SEBBUSJ_FYSAUTKF "\nOek'lu uqhdut VKBB FEMUH! Ted'j mqiju jycu! Oekh reduh cywxj tyiqffuqh!\n"
+# define CELUI_DRH "\nOek'lu cqtu q bej ev celui! Auuf weyd Iaubujheda!\n"
+# define UHHEH_UNYJ_DEJ_EFUD "\nUhheh. Te oek xqlu qbb jxu redui? Qhu oek ikhu? Jxqj teuid'j iuuci q ryw reduh je cu...\n"
+# define DUM_FBQOUH_FEI "\nOekh dum feiyjyed yi iecumxuhu! Auuf dqlywqju xubb!\n"
 
 /* player movement */
-# define EARLY_GAME_CLOSE "\nLeaving hell? already? what about your boner???\n"
-# define FINAL_MOVE "\nYou got that boner with not so many moves! You're a real champ!\n"
-# define FINAL_JOKE "\nSo many moves to get a boner??? Should i call you Rocco or just turtle? Anyway...\n"
-# define WIN_MSG "\nWHAT AN AMAZING BONER! CONGRATS!\n"
-# define WIN_JOKE "\nA PERFECTLY RESPECTABLE BONER! CONGRATS TURTLE!\n"
-# define SECRET_LOCKED "\nSECRET IS LOCKED! Try to make secret come true\n"
-# define SECRET_UNLOCKED "\nSECRET HAS BEEN DISCOVERED! Congratulation mighty hero!\n"
+# define UQHBO_WQCU_SBEIU "\nBuqlydw xubb? qbhuqto? mxqj qrekj oekh reduh???\n"
+# define VYDQB_CELU "\nOek wej jxqj reduh myjx dej ie cqdo celui! Oek'hu q huqb sxqcf!\n"
+# define VYDQB_ZEAU "\nIe cqdo celui je wuj q reduh??? Ixekbt y sqbb oek Hesse eh zkij jkhjbu? Qdomqo...\n"
+# define MYD_CIW "\nMXQJ QD QCQPYDW REDUH! SEDWHQJI!\n"
+# define MYD_ZEAU "\nQ FUHVUSJBO HUIFUSJQRBU REDUH! SEDWHQJI JKHJBU!\n"
+# define IUSHUJ_BESAUT "\nIUSHUJ YI BESAUT! Jho je cqau iushuj secu jhku\n"
+# define IUSHUJ_KDBESAUT "\nIUSHUJ XQI RUUD TYISELUHUT! Sedwhqjkbqjyed cywxjo xuhe!\n"
 
 /* losing msg */
-# define PLAYER_GOT_CAUGHT "\nYOU DIED\n"
-# define ENEMY_GOT_PLAYER "\nHELL GOT YOU\n"
-# define GAME_LOST "\nGame lost. Maybe you can try minecraft...\n"
+# define FBQOUH_WEJ_SQKWXJ "\nOEK TYUT\n"
+# define UDUCO_WEJ_FBQOUH "\nXUBB WEJ OEK\n"
+# define WQCU_BEIJ "\nWqcu beij. Cqoru oek sqd jho cydushqvj...\n"
 
 /* enemy mechanics */
-# define ENEMY_BUMP_PLAYER "\nThey really want to die... what a bunch of idiots!\n"
+# define UDUCO_RKCF_FBQOUH "\nJxuo huqbbo mqdj je tyu... mxqj q rkdsx ev ytyeji!\n"
 
 /* player mechanics */
-# define ON_FIRE "\nYour pipi is on fire!!! It's time to give some punta\n"
-# define RUN_OUT "\nChill now. You're gonna die for dehydration...\n"
-# define PLAYER_DESTROY_ENEMY "\nUlala! That's some hard smashing D! Right between the eyes!\n"
-# define ENEMIES_ALIVE_NBR "\nStill a lot of enemies alive! Someone has to do all the work...\n"
-# define ENEMY_ALIVE_1 "\nOnly one enemy alive! Dig that hole dwarf! Diggy diggy hole!\n"
-# define NO_MORE_ENEMIES "\nAll enemies are gone! You could break a wall with that you know? That's some nasty shi...\n"
+# define ED_VYHU "\nOekh fyfy yi ed vyhu!!! Yj'i jycu je wylu iecu fkdjq\n"
+# define HKD_EKJ "\nSxybb dem. Oek'hu weddq tyu veh tuxothqjyed...\n"
+# define FBQOUH_TUIJHEO_UDUCO "\nKbqbq! Jxqj'i iecu xqht icqixydw T! Hywxj rujmuud jxu uoui!\n"
+# define UDUCYUI_QBYLU_DRH "\nIjybb q bej ev uducyui qbylu! Iecuedu xqi je te qbb jxu meha...\n"
+# define UDUCO_QBYLU_1 "\nEdbo edu uduco qbylu! Tyw jxqj xebu tmqhv! Tywwo tywwo xebu!\n"
+# define DE_CEHU_UDUCYUI "\nQbb uducyui qhu wedu! Oek sekbt rhuqa q mqbb myjx jxqj oek adem? Jxqj'i iecu dqijo ixy...\n"
 
 /* enemy mechanics utils */
-# define ERROR_ENEMY_ALLOC "\nError. Can't allocate memory for enemy array.\n"
+# define UHHEH_UDUCO_QBBES "\nUhheh. Sqd'j qbbesqju cuceho veh uduco qhhqo.\n"
 
 /* player mechanics utils */
-# define ERROR_REALLOC_ENEMY_ARR "\nError. Reallocation of enemy array failed.\n"
+# define UHHEH_HUQBBES_UDUCO_QHH "\nUhheh. Huqbbesqjyed ev uduco qhhqo vqybut.\n"
 
 #endif

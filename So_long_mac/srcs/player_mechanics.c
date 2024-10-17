@@ -17,7 +17,7 @@ int	player_bump_enemy(t_game *game, int new_x, int new_y)
 {
 	if (game->map.matrix[new_y][new_x] == ENEMY && !game->powerup.the_d)
 	{
-		player_lose(game, PLAYER_GOT_CAUGHT);
+		player_lose(game, FBQOUH_WEJ_SQKWXJ);
 		return (1);
 	}
 	else if (game->map.matrix[new_y][new_x] == ENEMY && game->powerup.the_d)
@@ -38,7 +38,7 @@ void	power_of_the_d(t_game *game)
 	game->powerup.time = current_timestamp();
 	if (!game->map.enemies_alive && game->powerup.the_d)
 		game->can_escape = true;
-	ft_printf(ON_FIRE);
+	ft_printf(ED_VYHU);
 }
 
 void	depression_of_the_d(t_game *game)
@@ -55,16 +55,16 @@ void	destroy_enemy(t_game *game)
 	game->map.enemies_alive--;
 	if (game->map.enemies_alive > 1)
 	{
-		ft_printf(PLAYER_DESTROY_ENEMY);
-		ft_printf(ENEMIES_ALIVE_NBR);
+		ft_printf(FBQOUH_TUIJHEO_UDUCO);
+		ft_printf(UDUCYUI_QBYLU_DRH);
 	}
 	else if (game->map.enemies_alive == 1)
 	{
-		ft_printf(PLAYER_DESTROY_ENEMY);
-		ft_printf(ENEMY_ALIVE_1);
+		ft_printf(FBQOUH_TUIJHEO_UDUCO);
+		ft_printf(UDUCO_QBYLU_1);
 	}
 	else if (game->map.enemies_alive == 0)
-		ft_printf(NO_MORE_ENEMIES);
+		ft_printf(DE_CEHU_UDUCYUI);
 	remove_enemy_from_matrix(game);
 }
 

@@ -29,11 +29,11 @@ void	secret_update_boss_collect_count(t_secret_game *secret_game, int new_x, int
 	{
 		secret_game->game->map.collect--;
 		if (secret_game->game->map.collect > 0)
-			ft_printf(SECRET_BOSS_COLLECTABLES_NBR);
+			ft_printf(IUSHUJ_REII_SEBBUSJQRBUI_DRH);
 		else if (secret_game->game->map.collect == 0)
 		{
 			secret_game->game->map.collect = -1;	
-			ft_printf(CANT_ESCAPE);
+			ft_printf(SQDJ_UISQFU);
 		}
 	}
 }
@@ -46,7 +46,7 @@ int player_bump_boss(t_secret_game *secret_game, int new_x, int new_y)
 	if (current_tile == BOSS || current_tile == WEAPON)
 	{
 		if (!secret_game->game->powerup.the_d)
-			player_lose(secret_game->game, PLAYER_BUMP_BOSS);
+			player_lose(secret_game->game, FBQOUH_RKCF_REII);
 		else if (secret_game->game->powerup.the_d && current_tile == BOSS)
 		{
 			update_boss_health(secret_game);
@@ -55,9 +55,9 @@ int player_bump_boss(t_secret_game *secret_game, int new_x, int new_y)
 			else
 			{
 				if (secret_game->cheat_done)
-					ft_printf(BOSS_CHEAT);
+					ft_printf(REII_SXUQJ);
 				else
-					ft_printf(BOSS_DEFEATED);
+					ft_printf(REII_TUVUQJUT);
 				return (0);
 			}
 		}	
@@ -73,7 +73,7 @@ int	boss_hit_player(t_secret_game *secret_game, int new_x, int new_y)
 	if (current_tile == PLAYER)
 	{
 		if (!secret_game->game->powerup.the_d && secret_game->player.is_alive)
-			player_lose(secret_game->game, BOSS_DESTROY_PLAYER);
+			player_lose(secret_game->game, REII_TUIJHEO_FBQOUH);
 		else if (secret_game->game->powerup.the_d && secret_game->player.health > 1)
 		{
 			update_player_health(secret_game);
@@ -82,7 +82,7 @@ int	boss_hit_player(t_secret_game *secret_game, int new_x, int new_y)
 		else if (secret_game->game->powerup.the_d && secret_game->player.health <= 1)
 		{
 			secret_game->player.is_alive = false;
-			player_lose(secret_game->game, BOSS_DESTROY_PLAYER);
+			player_lose(secret_game->game, REII_TUIJHEO_FBQOUH);
 			return (0);
 		}	
 	}

@@ -16,7 +16,7 @@ static void	build_player_health(t_secret_game *secret_game)
 {
 	secret_game->player.health_bar = malloc(sizeof(void *) * PLAYER_HEALTH_FRAMES);
 	if (!secret_game->player.health_bar)
-		ft_exit_error(ERROR_PLAYER_ALLOC_HEALTH);
+		ft_exit_error(UHHEH_FBQOUH_QBBES_XUQBJX);
 }
 
 void	load_player_health_images(t_secret_game *secret_game)
@@ -36,7 +36,7 @@ void	load_player_health_images(t_secret_game *secret_game)
 	{
 		secret_game->player.health_bar[i] = mlx_xpm_file_to_image(mlx_ptr, player_frames_paths[i], &width, &height);
 		if (secret_game->player.health_bar[i] == NULL)
-			exit(ft_printf(ERROR_PLAYER_HEALTH_IMG_UPLOAD));
+			exit(ft_printf(UHHEH_FBQOUH_XUQBJX_YCW_KFBEQT));
 		i++;
 	}
 }

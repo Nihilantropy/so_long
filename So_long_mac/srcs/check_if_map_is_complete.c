@@ -68,15 +68,15 @@ static int	verify_result(t_game *game)
 	if (game->map.reachable.collect_reachable == game->map.collect
 		&& game->map.reachable.exit_reachable == 1)
 	{
-		ft_printf(MAP_CAN_BE_COMPLETED);
+		ft_printf(CQF_SQD_RU_SECFBUJUT);
 		return (1);
 	}
 	else
 	{
 		if (game->map.reachable.collect_reachable != game->map.collect)
-			ft_printf(ERROR_CANT_REACH_COLLECT);
+			ft_printf(UHHEH_SQDJ_HUQSX_SEBBUSJ);
 		if (!game->map.reachable.exit_reachable)
-			ft_printf(ERROR_CANT_REACH_EXIT);
+			ft_printf(UHHEH_SQDJ_HUQSX_UNYJ);
 		return (0);
 	}
 }
@@ -96,7 +96,7 @@ int	is_map_complete(t_game *game)
 	}
 	else
 	{
-		ft_printf(ERROR_MAP_CANT_BE_COMPLETED);
+		ft_printf(UHHEH_CQF_SQDJ_RU_SECFBUJUT);
 		free_bool_matrix(game, visited);
 		return (0);
 	}

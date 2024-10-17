@@ -82,7 +82,7 @@ void free_images(t_game *game)
 		!game->tiles.player_d.frames[0] || !game->tiles.player_d_inv.frames[0] ||
 		!game->tiles.collect.frames[0] || !game->tiles.exit.frames[0] ||
 		!game->tiles.enemy.frames[0] || !game->tiles.number.count[0])
-		ft_exit_error(ERROR_FREE_IMAGE);
+		ft_exit_error(UHHEH_VHUU_YCQWU);
 	mlx_destroy_image(game->mlx_ptr, game->tiles.floor);
 	free_wall_images(game);
 	free_player_images(game);

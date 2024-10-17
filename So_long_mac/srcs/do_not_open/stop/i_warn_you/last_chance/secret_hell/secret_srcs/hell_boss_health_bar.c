@@ -16,7 +16,7 @@ static void	build_boss_health(t_secret_game *secret_game)
 {
 	secret_game->tiles.boss.health = malloc(sizeof(void *) * BOSS_HEALTH_FRAMES);
 	if (!secret_game->tiles.boss.health)
-		ft_exit_error(ERROR_BOSS_ALLOC_HEALTH);
+		ft_exit_error(UHHEH_REII_QBBES_XUQBJX);
 }
 
 void	load_boss_health_images(t_secret_game *secret_game)
@@ -40,7 +40,7 @@ void	load_boss_health_images(t_secret_game *secret_game)
 	{
 		secret_game->tiles.boss.health[i] = mlx_xpm_file_to_image(mlx_ptr, boss_frames_paths[i], &width, &height);
 		if (secret_game->tiles.boss.health[i] == NULL)
-			exit(ft_printf(ERROR_BOSS_HEALTH_IMG_UPLOAD));
+			exit(ft_printf(UHHEH_REII_XUQBJX_YCW_KFBEQT));
 		i++;
 	}
 }

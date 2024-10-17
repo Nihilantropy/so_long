@@ -23,7 +23,7 @@ void    build_enemy_arr(t_game *game)
     {
         game->map.enemy = (t_enemy *)malloc(sizeof(t_enemy) * enemy_nbr);
         if (!game->map.enemy)
-            ft_exit_error(ERROR_ENEMY_ALLOC);
+            ft_exit_error(UHHEH_UDUCO_QBBES);
         while (enemy_index < enemy_nbr)
         {
             game->map.enemy[enemy_index].alive = true;

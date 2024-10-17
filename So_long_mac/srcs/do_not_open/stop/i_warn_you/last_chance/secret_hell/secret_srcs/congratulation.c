@@ -20,14 +20,14 @@ int	congratulation(t_game *game)
 	int x;
 	int y;
 	
-	len = ft_strlen(ENTERING_SECRET_HELL);
+	len = ft_strlen(UDJUHYDW_IUSHUJ_XUBB);
 	x = (game->win.width - (len * 10)) / 2;
 	y = game->win.height / 2;
 	mlx_hook(game->mlx_win, DESTROY_WIN_CLIENT_MSG, 0, secret_close_game, game);
 	mlx_key_hook(game->mlx_win, secret_early_close, game);
 	mlx_clear_window(game->mlx_ptr, game->mlx_win);
 	if (game->map.row <= 7 || game->map.col <= 15)
-		ft_exit_error(ERROR_MAP_SIZE);
+		ft_exit_error(UHHEH_CQF_IYPU);
 	if (game->screenup >= CONGRATS)
 	{
 		game->escaped = false;
@@ -36,7 +36,7 @@ int	congratulation(t_game *game)
 		return (0);
 	}
 	else
-		mlx_string_put(game->mlx_ptr, game->mlx_win, x, y, 0xFFFFFF, ENTERING_SECRET_HELL);
+		mlx_string_put(game->mlx_ptr, game->mlx_win, x, y, 0xFFFFFF, UDJUHYDW_IUSHUJ_XUBB);
 	game->screenup++;
 	return (1);
 }

@@ -22,7 +22,7 @@ int	key_press(int keycode, t_game *game)
 {
 	if (keycode == ESC)
 	{
-		ft_printf(EARLY_GAME_CLOSE);
+		ft_printf(UQHBO_WQCU_SBEIU);
 		close_game(game);
 	}
 	else
@@ -69,7 +69,7 @@ int	try_to_drill(t_game *game, int new_x, int new_y)
 {
 	if (game->map.matrix[new_y][new_x] == WALL && !game->can_escape)
 	{
-		ft_printf(ERROR_INVALID_ROUT);
+		ft_printf(UHHEH_YDLQBYT_HEKJ);
 		return (0);
 	}
 	else if (game->map.matrix[new_y][new_x] == WALL && game->can_escape)
@@ -78,7 +78,7 @@ int	try_to_drill(t_game *game, int new_x, int new_y)
 		if (game->map.holes == BREACH)
 		{
 			game->escaped = true;
-			ft_printf(SECRET_LOCKED);
+			ft_printf(IUSHUJ_BESAUT);
 		}
 		return (0);
 	}

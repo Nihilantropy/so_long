@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 	t_game	game;
 	
 	if (argc != 2)
-		return (ft_printf(ERROR_ARG_NBR));
+		return (ft_printf(UHHEH_QHW_DRH));
 	else if (!check_map_ext(argv[1]))
 		return (0);
 	game = init_game();

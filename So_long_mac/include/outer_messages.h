@@ -13,49 +13,49 @@
 #ifndef OUTER_MESSAGES_H
 # define OUTER_MESSAGES_H
 
-# define ERROR_MAP_SIZE "\nHey,map is not large enough! Secret hell is not a weiner!\n"
-# define ESCAPED "\nYou escaped from hell!\n"
-# define ENTERING_SECRET_HELL "\n...You are now in the secret hell! The bottom of the barrle my friend...\n"
+# define UHHEH_CQF_IYPU "\nXuo,cqf yi dej bqhwu udekwx! Iushuj xubb yi dej q muyduh!\n"
+# define UISQFUT "\nOek uisqfut vhec xubb!\n"
+# define UDJUHYDW_IUSHUJ_XUBB "\n...Oek qhu dem yd jxu iushuj xubb! Jxu rejjec ev jxu rqhhbu co vhyudt...\n"
 
-# define SECRET_EARLY_GAME_CLOSE "\nLeaving hell? already? what about your boner???\n"
-# define SECRET_ERROR_EXIT_NOT_OPEN "\nError. Do you have all the bones? Are you sure? That doesn't seems a big boner to me...\n"
-# define SECRET_ERROR_INVALID_ROUT "\nError. Are you trying to brake the wall? What are you, a Pink floyd fan?\n"
-# define SECRET_ERROR_INVALID_KEY "\nError. Try to smash another button... Or I'll smash your sis.\n"
+# define IUSHUJ_UQHBO_WQCU_SBEIU "\nBuqlydw xubb? qbhuqto? mxqj qrekj oekh reduh???\n"
+# define IUSHUJ_UHHEH_UNYJ_DEJ_EFUD "\nUhheh. Te oek xqlu qbb jxu redui? Qhu oek ikhu? Jxqj teuid'j iuuci q ryw reduh je cu...\n"
+# define IUSHUJ_UHHEH_YDLQBYT_HEKJ "\nUhheh. Qhu oek jhoydw je rhqau jxu mqbb? Mxqj qhu oek, q Fyda vbeot vqd?\n"
+# define IUSHUJ_UHHEH_YDLQBYT_AUO "\nUhheh. Jho je icqix qdejxuh rkjjed... Eh Y'bb icqix oekh iyi.\n"
 
-# define BOSS_POSITION "\nBOB is here! Pay attention!\n"
-# define SECRET_COLLECTABLES_NBR "\nRemaining bones: a lot. You're boner is getting harder!\n"
-# define SECRET_ALL_COLLECT_PICKEDUP "\nAll bones picked up. You can run if you want...\n"
-# define SECRET_FINAL_PLAYER_POS "\nYou've reached the portal!\n"
-# define SECRET_ERROR_FREE_IMAGE "\nError. Can't deallocate memory for some images.\n"
+# define REII_FEIYJYED "\nRER yi xuhu! Fqo qjjudjyed!\n"
+# define IUSHUJ_SEBBUSJQRBUI_DRH "\nHucqydydw redui: q bej. Oek'hu reduh yi wujjydw xqhtuh!\n"
+# define IUSHUJ_QBB_SEBBUSJ_FYSAUTKF "\nQbb redui fysaut kf. Oek sqd hkd yv oek mqdj...\n"
+# define IUSHUJ_VYDQB_FBQOUH_FEI "\nOek'lu huqsxut jxu fehjqb!\n"
+# define IUSHUJ_UHHEH_VHUU_YCQWU "\nUhheh. Sqd'j tuqbbesqju cuceho veh iecu ycqwui.\n"
 
-# define ERROR_BOSS_ALLOC_FRAME "\nError. Can't allocate memory for boss frame array.\n"
-# define ERROR_BOSS_IMG_UPLOAD "\nError. Can't upload boss images.\n"
-# define ERROR_BOSS_ALLOC_HEALTH "\nError. Can't allocate boss health images.\n"
-# define ERROR_PLAYER_ALLOC_HEALTH "\nError. Can't allocate player health images.\n"
-# define ERROR_BOSS_HEALTH_IMG_UPLOAD "\nError. Can't upload boss health images.\n"
-# define ERROR_PLAYER_HEALTH_IMG_UPLOAD "\nError. Can't upload player health images.\n"
-# define ERROR_CREATE_PUASE_IMAGE "\nError. Can't create pause image.\n"
-# define ERROR_BOSS_WEAPON_ALLOC_FRAME "\nError. Can't allocate memory for boss weapon array.\n"
-# define ERROR_BOSS_WEAPON_IMG_UPLOAD "\nError. Can't upload boss weapon images.\n"
+# define UHHEH_REII_QBBES_VHQCU "\nUhheh. Sqd'j qbbesqju cuceho veh reii vhqcu qhhqo.\n"
+# define UHHEH_REII_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt reii ycqwui.\n"
+# define UHHEH_REII_QBBES_XUQBJX "\nUhheh. Sqd'j qbbesqju reii xuqbjx ycqwui.\n"
+# define UHHEH_FBQOUH_QBBES_XUQBJX "\nUhheh. Sqd'j qbbesqju fbqouh xuqbjx ycqwui.\n"
+# define UHHEH_REII_XUQBJX_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt reii xuqbjx ycqwui.\n"
+# define UHHEH_FBQOUH_XUQBJX_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt fbqouh xuqbjx ycqwui.\n"
+# define UHHEH_SHUQJU_FKQIU_YCQWU "\nUhheh. Sqd'j shuqju fqkiu ycqwu.\n"
+# define UHHEH_REII_MUQFED_QBBES_VHQCU "\nUhheh. Sqd'j qbbesqju cuceho veh reii muqfed qhhqo.\n"
+# define UHHEH_REII_MUQFED_YCW_KFBEQT "\nUhheh. Sqd'j kfbeqt reii muqfed ycqwui.\n"
 
-# define ERROR_CHEAT_ALLOC "\nError. Can't allocate memory for cheat string.\n"
+# define UHHEH_SXUQJ_QBBES "\nUhheh. Sqd'j qbbesqju cuceho veh sxuqj ijhydw.\n"
 
-# define PLAYER_BUMP_BOSS "\nMake sure to have your D on flame next time! What an idiot...\n"
+# define FBQOUH_RKCF_REII "\nCqau ikhu je xqlu oekh T ed vbqcu dunj jycu! Mxqj qd ytyej...\n"
 
-# define BOSS_DESTROY_PLAYER "\nBOSS DESTROYED YOU! Where the sun never shine, right? Where was your boner???\n"
-# define BOSS_HIT_PLAYER "\nBoss is trying to engrape you? Engrape what? What is he doing? Oh no...\n"
-# define BOSS_DEFEATED "\nYOU DEFEATED BOB! what an, increadible battle! And you DIDN'T CHEAT! A real hero!\n"
-# define BOSS_CHEAT "\nYOU DEFEATED... Ehm you... never mind. Well done... I guess. :'(\n"
+# define REII_TUIJHEO_FBQOUH "\nREII TUIJHEOUT OEK! Mxuhu jxu ikd duluh ixydu, hywxj? Mxuhu mqi oekh reduh???\n"
+# define REII_XYJ_FBQOUH "\nReii yi jhoydw je udwhqfu oek? Udwhqfu mxqj? Mxqj yi xu teydw? Ex de...\n"
+# define REII_TUVUQJUT "\nOEK TUVUQJUT RER! mxqj qd, ydshuqtyrbu rqjjbu! Qdt oek TYTD'J SXUQJ! Q huqb xuhe!\n"
+# define REII_SXUQJ "\nOEK TUVUQJUT... Uxc oek... duluh cydt. Mubb tedu... Y wkuii. :'(\n"
 
-# define SECRET_BOSS_COLLECTABLES_NBR "\nBoss is taking your sweet bones away! Protect your boner!! Hurry up!\n"
+# define IUSHUJ_REII_SEBBUSJQRBUI_DRH "\nReii yi jqaydw oekh imuuj redui qmqo! Fhejusj oekh reduh!! Xkhho kf!\n"
 
-# define CANT_ESCAPE "\nBoss took last bone! You won't be able to escape anymore my friend... Good luck.\n"
+# define SQDJ_UISQFU "\nReii jeea bqij redu! Oek med'j ru qrbu je uisqfu qdocehu co vhyudt... Weet bksa.\n"
 
-# define CHEAT_DONE "\nCHEAT DONE! Do we have a real hacker here, or just a little coward? Kidding bro, good job :)\n"
-# define CHEAT_ERROR "\nI'll say just that: nice try... but try again, for the love of Satan!\n"
-# define CHEATER_WIN_MSG "\nCongratulation cheater! Here's your price... Just kidding, you deserve nothing!!!\n"
+# define SXUQJ_TEDU "\nSXUQJ TEDU! Te mu xqlu q huqb xqsauh xuhu, eh zkij q byjjbu semqht? Ayttydw rhe, weet zer :)\n"
+# define SXUQJ_UHHEH "\nY'bb iqo zkij jxqj: dysu jho... rkj jho qwqyd, veh jxu belu ev Iqjqd!\n"
+# define SXUQJUH_MYD_CIW "\nSedwhqjkbqjyed sxuqjuh! Xuhu'i oekh fhysu... Zkij ayttydw, oek tuiuhlu dejxydw!!!\n"
 
-# define SECRET_WIN_MSG "\nContratulation! You are the best of the best, kinda.\n"
-# define SECRET_WIN_JOKE "\nTURTLE TURLE TURTLE TURTLE TURTLE TURTLE TURTLE TURTLE TURTLE TURTLE\n"
+# define IUSHUJ_MYD_CIW "\nSedjhqjkbqjyed! Oek qhu jxu ruij ev jxu ruij, aydtq.\n"
+# define IUSHUJ_MYD_ZEAU "\nJKHJBU JKHBU JKHJBU JKHJBU JKHJBU JKHJBU JKHJBU JKHJBU JKHJBU JKHJBU\n"
 
 #endif
